@@ -1,38 +1,329 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  display: flex;
+ justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containner{
+  width: 360px;
+  margin-top: 10px;
+  height: 613px;
+  background-color: #F7F8F9;
   display: flex;
   flex-direction: column;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.homePage{
+  display: flex;
+  flex-direction: column;
+  margin-top: 82%;
+  width: 100%;
+  padding: 7px;
+  align-items: flex-start;
+    margin-left: 10px;
+}
+.header{
+  width: 100%;
+
+}
+.header h2{
+  font: normal normal medium 28px/17px Rubik;
+  cursor: pointer;
+  font-size: 28px;
+  color: #1D2226;;
+}
+.subheader{
+  width:70%;
+  font-size: 16px;
+  margin-top: 18px;
+  color: #1D2226;
+  cursor: pointer;
+  opacity: 0.6;
+  font-weight: 600;
+}
+.loginbtn{
+  width: 100%;
+}
+.loginbtn button{
+  margin-top: 24px;
+  cursor: pointer;
+  background-color: #6C25FF;
+  color: white;
+  opacity: 1;
+  border-radius: 6px;
+  width: 80%;
+  height: 46px;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+.login{
+  width: 100%;
+  margin-top: 17px;
+}
+.login button{
+    opacity: 1;
+  border-radius: 6px;
+  width: 80%;
+ height: 46px;
+  border: none;
+  font-weight: bold;
+  background-color: #6C25FF4B;
+  cursor: pointer;
+  font-size: 17px;
+}
+/* Reister Css */
+.Registercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Form box */
+.form-box {
+  background: #F7F8F9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* Headings */
+h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.bold {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.required {
+  color: red;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Radio buttons */
+.radio-group {
+  margin-bottom: 20px;
+}
+
+.radio-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.radio-options label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.radio-options input {
+  margin-right: 5px;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  background: #6c3ac9;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #572da8;
+}
+.error{
+  font-size: 13px;
+  color: red;
+}
+
+/* Reister Css Ends*/
+
+/* Login Css */
+.Logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 650px;
+  background-color: #f3f4f6;
+  margin-top: 20px;
+}
+
+.signin-box {
+  padding: 2rem;
+  border-radius: 8px;
+  width: 350px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bold {
+  color: black;
+}
+
+.description {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6a0dad;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d1d5db;
+  color: #6b7280;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+}
+
+.login-buttonActive{
+    width: 100%;
+  padding: 10px;
+  background-color: #d1d5db;
+  color: #6b7280;
+  border: none;
+  border-radius: 4px;
+   background: #572da8;
+   color: white;
+   cursor: pointer;
+}
+/* Login Css Ends*/
+
+.settings-container {
+ margin-top: 24px;
+  font-family: sans-serif;
+  width: 350px;
+  border: 1px solid #ddd;
+  background: #fff;
+  height: 650px;
+}
+
+.settings-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+.settings-card {
+  background: #f9fafb;
+  border: 1px solid #eee;
+  padding: 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background-color: #7b61ff;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 5px;
+  border: 2px solid white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.user-details {
+  margin-left: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-name {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
 }
+
+.user-email {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.bio-text {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 10px;
+}
+
